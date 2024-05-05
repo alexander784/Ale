@@ -15,7 +15,8 @@ export function NavBarLive() {
 function Navbar({ className }) {
   const [active, setActive] = useState(null);
   return (
-    <div className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 border border-red", className)}>
+    <div 
+    className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 border border-red", className)}>
       <menu setActive={setActive}>
         <p className="text-black dark:text-white text-left sm:text-sm md:text-2xl flex-1 hidden md:flex">Alexander Nyaga</p>
         <p classNam=" text-black dark:text-black text-left sm:text-sm md:text-2xl flex-1 hidden md:flex">MB</p>
