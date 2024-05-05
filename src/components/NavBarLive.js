@@ -1,3 +1,4 @@
+import { cn } from "../utils/cn";
 import { ProductItem } from "./ui/NavBarMenu";
 import { HoveredLink } from "./ui/NavBarMenu";
 
@@ -12,7 +13,7 @@ export function NavBarLive() {
 
 function Navbar({}) {
   return (
-    <div className={("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 boder border-red", className)}>
+    <div className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 boder border-red", className)}>
       <menu>
         <p className=" text-black dark:text-black text-left sm:text-sm md:text-2xl flex-1 hidden md:flex">Alexander Nyaga</p>
         <p classNam=" text-black dark:text-black text-left sm:text-sm md:text-2xl flex-1 hidden md:flex">MB</p>
