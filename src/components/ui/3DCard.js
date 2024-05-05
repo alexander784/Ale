@@ -10,13 +10,13 @@ import React, {
 const MouseEnterContext = createContext(
     undefined
   );
-export const cardCOntainer = ({
+export const CardContainer = ({
   children,
   className,
   containerClassName,
 }) => {
   const containerRef = useRef(null);
-  const [isMouseEntered, setIsMOuseEntered] = useState(false);
+  const [isMouseEntered, setIsMouseEntered] = useState(false);
 
   const handleMouseMove = (e) => {
     if (!containerRef.current) return;
@@ -27,9 +27,16 @@ export const cardCOntainer = ({
   };
 
   const handleMouseEnter = (e) => {
-    setIsMOuseEntered(true);
+    setIsMouseEntered(true);
     if(!containerRef.current) return;
   };
+
+  const handleMouseLeave = (e) => {
+    if (!containerRef.current) return;
+    setIsMouseEntered(false);
+    containerRef.current.style.transform = `rotateY(0deg) rotateX(0deg)`;
+  };
+  
   return (
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div

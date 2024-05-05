@@ -1,4 +1,5 @@
 import React from 'react';
+import HomeCard from './HomeCard';
 
 
 export function Background() {
@@ -7,9 +8,14 @@ export function Background() {
             <div className='h-full w-full flex flex-col items-center'>
                 <div className='py-28 grid grid-col-1 md:grid-cols-2 sm:w-96 md:w-[900px]'>
                     <div>
+                        <HomeCard />
                         
                     </div>
                 </div>
+                <div className='pointer-events-none dark:bg-gray-700 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]'></div>
+                <p className='text-4xl sm:text-7xl font-bold py-8 px-10 md:px-0 relative bg-clip-text text-transparent bg-gradient-to-t from-gray-600 via-gray-500 to-gray-700 dark:bg-gradient-to-t dark:from-gray-400 dark:to-white whitespace-normal'>
+                I build extensive website in JavaScript react 
+                </p>
             </div>
         </div>
     )
