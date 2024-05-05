@@ -1,5 +1,6 @@
 import React from 'react';
 import HomeCard from './HomeCard';
+import Experience from './Experience';
 
 
 export function Background() {
@@ -17,6 +18,10 @@ export function Background() {
                 I build extensive website in JavaScript react 
                 </p>
             </div>
+            <div className="md:w-[900px] p-10" id="experiences">
+                    <p className="text-4xl pb-4 font-bold">Experiences</p>
+                    <Experience />
+                </div>
         </div>
     )
 }
