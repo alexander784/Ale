@@ -18,7 +18,7 @@ export const cardCOntainer = ({
   const containerRef = useRef(null);
   const [isMouseEntered, setIsMOuseEntered] = useState(false);
 
-  const handleMouseMOve = (e) => {
+  const handleMouseMove = (e) => {
     if (!containerRef.current) return;
     const{left, top, width,height } = containerRef.current.getBoundingClientRect();
     const x = (e.clientX - left - width / 2) / 25;
@@ -26,7 +26,7 @@ export const cardCOntainer = ({
     containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
   };
 
-  const handleMOuseEnter = (e) => {
+  const handleMouseEnter = (e) => {
     setIsMOuseEntered(true);
     if(!containerRef.current) return;
   };
@@ -57,4 +57,18 @@ export const cardCOntainer = ({
     </MouseEnterContext.Provider>
   );
 };
+
+export const CardBody = ({ children, className }) => {
+  return (
+    <div
+      className={cn(
+        "h-96 w-[21rem] md:w-[24rem] [transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d]",
+        className
+      )}
+    >
+      {children}
+    </div>
+  );
+};
+
 
