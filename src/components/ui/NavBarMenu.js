@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
+import { Link } from 'react-router-dom';
 
 
 const transition = {
@@ -59,6 +60,28 @@ export const menuItem = ({setActive, active,item, children}) => {
         </div>
     );
 };
+
+export const ProductItem = ( {title, description, href, src,scrollTo }) => {
+    return (
+        <Link to={href} target='_blank' className='flex space-x-2' onClick={() => scroll(scrollTo || '')}>
+            <img
+            src={src}
+            width={140}
+            height={70}
+            alt={title}
+            className='flex-shrink-0 rounded-md shadow-2xl'
+            />
+            <div>
+                <h4 className='text-xl font-bold mb-1 text-black dark:text-white'>
+                    {title}
+                </h4>
+                <p className='text-neutral-700 text-sm max-w-[10rem] dark:text-neutral-300'>
+                    {description}
+                </p>
+            </div>
+        </Link>
+    )
+}
 
 
 
