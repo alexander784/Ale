@@ -80,8 +80,20 @@ export const ProductItem = ( {title, description, href, src,scrollTo }) => {
                 </p>
             </div>
         </Link>
-    )
-}
+    );
+};
+
+export const HoveredLink = ({ children, scrollTo, ...rest }) => {
+    return (
+        <Link
+            {...rest}
+            onClick={() => scroll(scrollTo || '')}
+            className="text-neutral-700 dark:text-neutral-200 hover:text-black dark:hover:text-white"
+        >
+            {children}
+        </Link>
+    );
+};
 
 
 
