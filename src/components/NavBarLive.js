@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { cn } from "../utils/cn";
-import { ProductItem } from "./ui/NavBarMenu";
+import { Menu, ProductItem,  MenuItem } from "./ui/NavBarMenu";
 import { HoveredLink } from "./ui/NavBarMenu";
 
 
@@ -18,15 +18,16 @@ function Navbar({ className }) {
     <div 
     className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 border border-red", className)}
     >
-      <menu setActive={setActive}>
+      <Menu setActive={setActive}>
         <p className="text-black dark:text-white text-left sm:text-sm md:text-2xl flex-1 hidden md:flex">Alexander Nyaga</p>
-        <p classNam="text-black dark:text-white text-left text-sm flex md:hidden flex-1 font-bold">MB</p>
-        <menuItem setActive={setActive} active={active} item="About me">
+        {/* <p classNam="text-black dark:text-white text-left text-sm flex md:hidden flex-1 font-bold">MB</p> */}
+        
+        <MenuItem setActive={setActive} active={active} item="About me">
         <div className="flex flex-col space-y-4 text-sm">
           <HoveredLink href="/interface-design" scrollTo="#experiences">Experiences</HoveredLink>
         </div>
-        </menuItem>
-        <menuItem setActive={setActive} active={active} item="Projects">
+        </MenuItem>
+        <MenuItem setActive={setActive} active={active} item="Projects">
         <div className="text-sm grid grid-cols-1 md:grid-cols-2 gap-10 p-4">
           <ProductItem 
           title="Moringa Pair"
@@ -38,15 +39,15 @@ function Navbar({ className }) {
           <ProductItem />
           <ProductItem />
         </div>
-        </menuItem>
-        <menuItem setActive={setActive} active={active} item="Contact">
+        </MenuItem>
+        <MenuItem setActive={setActive} active={active} item="Contact">
         <div className="flex flex-col space-y-4 text-sm">
           <HoveredLink>LinkedIn</HoveredLink>
           <HoveredLink>Github</HoveredLink>
           <HoveredLink>Email</HoveredLink>
         </div>
-        </menuItem>
-      </menu>
+        </MenuItem>
+      </Menu>
     </div>
   )
 

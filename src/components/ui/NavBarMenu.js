@@ -18,11 +18,11 @@ const scroll = (scrollTo) => {
         Selection?.scrollIntoView({ behavior: 'smooth', block: 'start'})
     }
 };
-export const menuItem = ({setActive, active,item, children}) => {
+export const MenuItem = ({setActive, active,item, children}) => {
     return (
         <div onMouseEnter={() => setActive(item)} className='relative'>
             <motion.p transition={{ duration: 0.3 }}
-            className='cursor-pointer text-black hover:opacity-[0.9]'
+            className='cursor-pointer text-black hover:opacity-[0.9] dark:text-white text-sm md:text-lg'
             >
                 {item}
             </motion.p>
@@ -39,7 +39,7 @@ export const menuItem = ({setActive, active,item, children}) => {
                                 <div className='absolute top-[calc(100%_+_1.4rem)] left-1/2 transform -translate-x-1/2'>
                                     <motion.div transition={transition}
                                     layoutId='active'
-                                    className="bg-gray-50 dark:bg-gray-700 backdrop-blur-md dark:backdropbackdrop-blur-md rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
+                                    className="bg-gray-50 dark:bg-gray-700 backdrop-blur-md dark:backdrop-blur-md rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
                                     
                                     >
                                         <motion.div layout className='w-max h-full p-4'
@@ -60,6 +60,21 @@ export const menuItem = ({setActive, active,item, children}) => {
         </div>
     );
 };
+
+export const Menu = ({
+    setActive,
+    children,
+}) => {
+    return (
+        <nav
+            onMouseLeave={() => setActive(null)}
+            className="relative rounded-full boder border-transparent dark:border-white/[0.2] backdrop-blur-md dark:backdrop-blur-md shadow-input flex justify-center items-center space-x-4 px-8 py-4"
+        >
+            {children}
+        </nav>
+    );
+};
+
 
 export const ProductItem = ( {title, description, href, src,scrollTo }) => {
     return (
