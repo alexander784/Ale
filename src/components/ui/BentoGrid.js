@@ -1,19 +1,23 @@
 
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { cn } from "../../utils/cn";
 
 
 export const BentoGrid = ({ className, children }) => {
+
     return (
-        <div className={className(
-            "grid md:auto-rows-[24rem] grid-cols-1 md:grid-cols-2 gap-4 max-w-7xl mx-auto",
-            className
-        )}
+        <div
+            className={cn(
+                "grid md:auto-rows-[24rem] grid-cols-1 md:grid-cols-2 gap-4 max-w-7xl mx-auto ",
+                className
+            )}
         >
             {children}
-       </div>
+        </div>
     );
 };
+
 
 export const BentoGridItem = ({className, title, description, header,icon, url}) => {
     return (
