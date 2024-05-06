@@ -34,5 +34,23 @@ const Skeleton = ({ src, chips }) => (
     </div>
 );
 
+const items = [
+    {
+        title:"Moringa Pair",
+        description: "A system that randomly pairs up students, keeps track of each pair and changes weekly.",
+        header:"",
+        icon:"",
+        url:""
+    },
+    {
+        title:"Crab Jobs",
+        description: "This is a job search website built using React and Tailwind CSS. It allows users to search for job listings based on various criteria such as job title, location, and company",
+        header:"",
+        icon:"",
+        url:""
+    },
+
+]
+
 
 export default Projects;
