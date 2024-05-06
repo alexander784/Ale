@@ -18,8 +18,21 @@ export function Projects()  {
         }
 
     </BentoGrid>
-
-  )
+  );
 }
+
+const Skeleton = ({ src, chips }) => (
+    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl flex-col">
+        <img className="h-full w-full object-cover rounded-lg" src={src} />
+        <div className="flex flex-row flex-wrap gap-2 mt-3">
+            {
+                chips?.map((chip) => (
+                    <div key={Math.random(100)} className="chip py-[3px] px-[6px] text-xs bg-gray-300 text-black dark:text-black rounded-md borde-[1px]">{chip}</div>
+                ))
+            }
+        </div>
+    </div>
+);
+
 
 export default Projects;
