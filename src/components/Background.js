@@ -1,6 +1,7 @@
 import React from 'react';
 import HomeCard from './HomeCard';
 import Experience from './Experience';
+import Projects from './Projects';
 
 
 export function Background() {
@@ -22,6 +23,7 @@ export function Background() {
                     <p className="text-4xl pb-4 font-bold">Experiences</p>
                     <Experience />
                 </div>
+                <Projects />
         </div>
     )
 }

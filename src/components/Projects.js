@@ -1,5 +1,6 @@
 import React from 'react'
 import { BentoGrid, BentoGridItem } from './ui/BentoGrid';
+import Jobs from "../assets/Jobs.png"
 
 export function Projects()  {
   return (
@@ -47,8 +48,9 @@ const items = [
         description: "This is a job search website built using React and Tailwind CSS. It allows users to search for job listings based on various criteria such as job title, location, and company",
         header:"",
         icon:"",
-        url:""
+        url:"../assets/Jobs.png"
     },
+    
 
 ]
 

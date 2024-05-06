@@ -4,7 +4,7 @@ import NavBarLive from "./NavBarLive";
 const Home = () => {
   return (
     <div>
-        <NavBarLive />
+        {/* <NavBarLive /> */}
         <Background />
         {/* <Dashboard /> */}
     </div>

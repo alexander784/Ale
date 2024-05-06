@@ -16,10 +16,11 @@ function Navbar({ className }) {
   const [active, setActive] = useState(null);
   return (
     <div 
-    className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 border border-red", className)}>
+    className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 border border-red", className)}
+    >
       <menu setActive={setActive}>
         <p className="text-black dark:text-white text-left sm:text-sm md:text-2xl flex-1 hidden md:flex">Alexander Nyaga</p>
-        <p classNam=" text-black dark:text-black text-left sm:text-sm md:text-2xl flex-1 hidden md:flex">MB</p>
+        <p classNam="text-black dark:text-white text-left text-sm flex md:hidden flex-1 font-bold">MB</p>
         <menuItem setActive={setActive} active={active} item="About me">
         <div className="flex flex-col space-y-4 text-sm">
           <HoveredLink href="/interface-design" scrollTo="#experiences">Experiences</HoveredLink>
@@ -38,7 +39,7 @@ function Navbar({ className }) {
           <ProductItem />
         </div>
         </menuItem>
-        <menuItem>
+        <menuItem setActive={setActive} active={active} item="Contact">
         <div className="flex flex-col space-y-4 text-sm">
           <HoveredLink>LinkedIn</HoveredLink>
           <HoveredLink>Github</HoveredLink>
