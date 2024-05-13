@@ -1,13 +1,14 @@
 import React from 'react'
 import { BentoGrid, BentoGridItem } from './ui/BentoGrid';
 import Jobs from "../assets/Jobs.png"
+import Moringa from "../assets/Moringa.png";
 
 export function Projects()  {
   return (
     <BentoGrid className="max-w-4xl mx-auto">
         {
             items.map((item, i) => (
-                <BentoGridItem 
+                <BentoGridItem
                 key={i}
                 title={item.title}
                 description={item.description}
@@ -39,7 +40,7 @@ const items = [
     {
         title:"Moringa Pair",
         description: "A system that randomly pairs up students, keeps track of each pair and changes weekly.",
-        header:"",
+        // header:"fffff",
         icon:"",
         url:""
     },
@@ -48,7 +49,7 @@ const items = [
         description: "This is a job search website built using React and Tailwind CSS. It allows users to search for job listings based on various criteria such as job title, location, and company",
         header:"",
         icon:"",
-        url:"../assets/Jobs.png"
+        url:Jobs
     },
     
 

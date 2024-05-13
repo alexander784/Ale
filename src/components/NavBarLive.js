@@ -2,6 +2,11 @@ import { useState } from "react";
 import { cn } from "../utils/cn";
 import { Menu, ProductItem,  MenuItem } from "./ui/NavBarMenu";
 import { HoveredLink } from "./ui/NavBarMenu";
+import Moringa from "../assets/Moringa.png";
+import Booking from "../assets/Booking.png";
+import Commerce from "../assets/Commerce.png";
+
+
 
 
 export function NavBarLive() {
@@ -15,36 +20,43 @@ export function NavBarLive() {
 function Navbar({ className }) {
   const [active, setActive] = useState(null);
   return (
+    
     <div 
     className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 border border-red", className)}
     >
-      <Menu setActive={setActive}>
         <p className="text-black dark:text-white text-left sm:text-sm md:text-2xl flex-1 hidden md:flex">Alexander Nyaga</p>
-        {/* <p classNam="text-black dark:text-white text-left text-sm flex md:hidden flex-1 font-bold">MB</p> */}
+
+      <Menu setActive={setActive}>
         
-        <MenuItem setActive={setActive} active={active} item="About me">
-        <div className="flex flex-col space-y-4 text-sm">
-          <HoveredLink href="/interface-design" scrollTo="#experiences">Experiences</HoveredLink>
-        </div>
-        </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Projects">
         <div className="text-sm grid grid-cols-1 md:grid-cols-2 gap-10 p-4">
           <ProductItem 
           title="Moringa Pair"
-          href="https://github.com/mit-bhalodi/Resume-Builder"
-          src=""
-          description=""
+          href="https://moringa-pair-beta.vercel.app/"
+          src={Moringa}
+          description="A system that randomly pairs up students, keeps track of each pair and changes weekly."
           />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
+          <ProductItem 
+          title="Booking"
+          href="https://booking-jdj6.vercel.app/"
+          src={Booking}
+          description="This a React app that allows users to search for hotels and view details about available accommodations."/>
+          
+          <ProductItem 
+          title="E-commerce"
+          href="https://ecommerce-ten-weld.vercel.app/"
+          src={Commerce}
+          description="This an E-commerce Website where you can search for product you want, view the products and view detailes about the products"/>
+          <ProductItem 
+
+          />
         </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Contact">
         <div className="flex flex-col space-y-4 text-sm">
-          <HoveredLink>LinkedIn</HoveredLink>
-          <HoveredLink>Github</HoveredLink>
-          <HoveredLink>Email</HoveredLink>
+          <HoveredLink to="https://github.com/alexander784">Github</HoveredLink>
+          <HoveredLink to="https://www.linkedin.com/in/alexander-nyaga-b415ab2a1/">LinkedIn</HoveredLink>
+          {/* <HoveredLink>Email</HoveredLink> */}
         </div>
         </MenuItem>
       </Menu>
