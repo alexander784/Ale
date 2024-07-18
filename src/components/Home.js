@@ -4,7 +4,7 @@ import NavBarLive from "./NavBarLive";
 
 const Home = () => {
   return (
-    <div>
+    <div className="home-screen bg-white dark:bg-gray-700 w-full h-screen">
         <NavBarLive />
         {/* <Background /> */}
         <Dashboard />

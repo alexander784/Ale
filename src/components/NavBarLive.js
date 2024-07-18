@@ -4,7 +4,7 @@ import { Menu, ProductItem,  MenuItem } from "./ui/NavBarMenu";
 import { HoveredLink } from "./ui/NavBarMenu";
 import Moringa from "../assets/Moringa.png";
 import Booking from "../assets/Booking.png";
-import Commerce from "../assets/Commerce.png";
+import Flight from "../assets/Flight.png";
 
 
 
@@ -28,7 +28,10 @@ function Navbar({ className }) {
 
       <Menu setActive={setActive}>
         
-        <MenuItem setActive={setActive} active={active} item="Projects">
+        <MenuItem setActive={setActive}
+         active={active}
+          item="Projects">
+
         <div className="text-sm grid grid-cols-1 md:grid-cols-2 gap-10 p-4">
           <ProductItem 
           title="Moringa Pair"
@@ -40,13 +43,13 @@ function Navbar({ className }) {
           title="Booking"
           href="https://booking-jdj6.vercel.app/"
           src={Booking}
-          description="This a React app that allows users to search for hotels and view details about available accommodations."/>
+          description="This a React landing page that allows users to search for hotels and view details about available accommodations."/>
           
           <ProductItem 
-          title="E-commerce"
-          href="https://ecommerce-ten-weld.vercel.app/"
-          src={Commerce}
-          description="This an E-commerce Website where you can search for product you want, view the products and view detailes about the products"/>
+          title="Flight Booking"
+          href="https://flight-henna.vercel.app/"
+          src={Flight}
+          description="This a react Flight Booking app that allow users to book flights by selecting their origin and destinations"/>
           <ProductItem 
 
           />

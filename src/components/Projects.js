@@ -2,6 +2,9 @@ import React from 'react'
 import { BentoGrid, BentoGridItem } from './ui/BentoGrid';
 import Jobs from "../assets/Jobs.png"
 import Moringa from "../assets/Moringa.png";
+import Booking from "../assets/Booking.png";
+import Flight from "../assets/Flight.png";
+
 
 export function Projects()  {
   return (
@@ -13,6 +16,7 @@ export function Projects()  {
                 title={item.title}
                 description={item.description}
                 header={item.header}
+                image={item.image}
                 className={i===3 || i === 6 ? "md:col-span-1" : ""}
                 url={item.url}
                 />
@@ -38,18 +42,26 @@ const Skeleton = ({ src, chips }) => (
 
 const items = [
     {
-        title:"Moringa Pair",
+        title:"Moringa Pair ",
         description: "A system that randomly pairs up students, keeps track of each pair and changes weekly.",
-        // header:"fffff",
+        header:<Skeleton src={Moringa} chips={["React,Bootstrap,Flask posresql" ]}/>,
         icon:"",
-        url:""
+        image:"",
+        url:"https://moringa-pair-beta.vercel.app/"
     },
     {
-        title:"Crab Jobs",
-        description: "This is a job search website built using React and Tailwind CSS. It allows users to search for job listings based on various criteria such as job title, location, and company",
-        header:"",
+        title:"Booking",
+        description: "This a react Booking landing page that allows users to search for hotels and view details about available accommodations.",
+        header:<Skeleton src={Booking} chips={["React,Tailwindcss" ]}/>,
         icon:"",
-        url:Jobs
+        url:"https://booking-jdj6.vercel.app/"
+    },
+    {
+        title:"Flight Booking",
+        description: "This a react Flight Booking app that allow users to book flights by selecting their origin and destinations",
+        header:<Skeleton src={Flight} chips={["React,Tailwindcss,Redux" ]}/>,
+        icon:"",
+        url:"https://flight-henna.vercel.app/"
     },
     
 

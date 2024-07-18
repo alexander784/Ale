@@ -1,6 +1,6 @@
 import React from 'react'
 import { CardBody, CardItem,CardContainer } from './ui/3DCard';
-import cvpic from "../assets/cvpic (1).jpg"
+import cvpic from "../assets/cvpic.png";
 export function HomeCard() {
   return (
     <CardContainer className="inter-var w-fit bg-gray-100 dark:bg-gray-700/[0.8] z-50">

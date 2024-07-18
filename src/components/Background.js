@@ -20,7 +20,6 @@ export function Background() {
                 </p>
                 </div>
             </div>
-            </div>
             <div className="md:w-[900px] p-10" id="experiences">
                     <p className="text-4xl pb-4 font-bold">Experiences</p>
                     <Experience />
@@ -32,5 +31,7 @@ export function Background() {
                 </div>
                 <Footer />
         </div>
+        </div>
+
     )
 }
