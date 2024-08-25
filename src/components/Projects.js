@@ -4,6 +4,7 @@ import Jobs from "../assets/Jobs.png"
 import Moringa from "../assets/Moringa.png";
 import Booking from "../assets/Booking.png";
 import Flight from "../assets/Flight.png";
+import Resume from "../assets/Resume.png";
 
 
 export function Projects()  {
@@ -62,6 +63,13 @@ const items = [
         header:<Skeleton src={Flight} chips={["React,Tailwindcss,Redux" ]}/>,
         icon:"",
         url:"https://flight-henna.vercel.app/"
+    },
+    {
+        title:"Resume Builder",
+        description: "A web app for creating resumes.Built with React for the frontend and Flask backend, this app allow user to edit, preview your resume and download the resume.",
+        header:<Skeleton src={Resume} chips={["React,Tailwindcss,Redux,Flask sqlite" ]}/>,
+        icon:"",
+        url:"https://github.com/alexander784/Resume-builder"
     },
     
 

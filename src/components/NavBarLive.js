@@ -5,6 +5,8 @@ import { HoveredLink } from "./ui/NavBarMenu";
 import Moringa from "../assets/Moringa.png";
 import Booking from "../assets/Booking.png";
 import Flight from "../assets/Flight.png";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 
 
@@ -55,6 +57,7 @@ function Navbar({ className }) {
           />
         </div>
         </MenuItem>
+
         <MenuItem setActive={setActive} active={active} item="Contact">
         <div className="flex flex-col space-y-4 text-sm">
           <HoveredLink to="https://github.com/alexander784">Github</HoveredLink>
@@ -62,6 +65,10 @@ function Navbar({ className }) {
           {/* <HoveredLink>Email</HoveredLink> */}
         </div>
         </MenuItem>
+        <p className="text-white">ga.nyaga7@gmail.com</p>
+        <a  className="text-white"href="https://x.com/lexandergitchez"><FaTwitter /></a>
+        <a  className="text-white"href="https://x.com/lexandergitchez"><FaLinkedin /></a>
+
       </Menu>
     </div>
   )
