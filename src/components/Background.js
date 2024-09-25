@@ -14,9 +14,9 @@ export function Background() {
                         <HomeCard />
                     </div>
                 <div>
-                <div className='pointer-events-none dark:bg-slate-900 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]'></div>
-                <p className='text-4xl sm:text-7xl font-bold py-8 px-10 md:px-0 relative bg-clip-text text-transparent bg-gradient-to-t from-gray-600 via-gray-500 to-gray-700 dark:bg-gradient-to-t dark:from-gray-400 dark:to-white whitespace-normal'>
-                I specialize in crafting dynamic efficient websites.
+                {/* <div className='pointer-events-none dark:bg-slate-900 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]'></div> */}
+                <p className='text-2xl sm:text-2xl  py-4 px-4 md:px-0 relative bg-clip-text text-transparent bg-gradient-to-t from-gray-600 via-gray-500 to-gray-700 dark:bg-gradient-to-t dark:from-gray-400 dark:to-white whitespace-normal'>
+                A dedicated Web Developer and API developer  with a knack for transforming complex problems into elegant solutions.  I specialize in developing dynamic and responsive web applications to improve user experiences.
                 </p>
                 </div>
             </div>

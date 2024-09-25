@@ -5,6 +5,7 @@ import Moringa from "../assets/Moringa.png";
 import Booking from "../assets/Booking.png";
 import Flight from "../assets/Flight.png";
 import Resume from "../assets/Resume.png";
+import Navbar from './NavBarLive';
 
 
 export function Projects()  {
@@ -28,6 +29,8 @@ export function Projects()  {
   );
 }
 
+
+
 const Skeleton = ({ src, chips }) => (
     <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl flex-col">
         <img className="h-full w-full object-cover rounded-lg" src={src} />
@@ -40,6 +43,7 @@ const Skeleton = ({ src, chips }) => (
         </div>
     </div>
 );
+
 
 const items = [
     {
@@ -74,6 +78,7 @@ const items = [
     
 
 ]
+
 
 
 export default Projects;
