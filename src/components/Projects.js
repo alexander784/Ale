@@ -10,7 +10,7 @@ import Navbar from './NavBarLive';
 
 export function Projects()  {
   return (
-    <BentoGrid className="max-w-4xl mx-auto">
+    <BentoGrid className="max-w-4xl mx-auto bg-black">
         {
             items.map((item, i) => (
                 <BentoGridItem
@@ -32,7 +32,7 @@ export function Projects()  {
 
 
 const Skeleton = ({ src, chips }) => (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl flex-col">
+    <div className="bg-black flex flex-1 w-full h-full min-h-[6rem] rounded-xl flex-col">
         <img className="h-full w-full object-cover rounded-lg" src={src} />
         <div className="flex flex-row flex-wrap gap-2 mt-3">
             {
