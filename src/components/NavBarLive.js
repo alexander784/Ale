@@ -25,7 +25,7 @@ function Navbar({ className }) {
          <a href="/" className="text-black dark:text-white text-left sm:text-sm md:text-2xl flex-1 hidden md:flex">
         AGN
       </a>
-        <MenuItem setActive={setActive} active={active} item="Projects">
+        {/* <MenuItem setActive={setActive} active={active} item="Projects">
           <div className="text-sm grid grid-cols-1 md:grid-cols-2 gap-10 p-4">
             <ProductItem 
               title="Moringa Pair"
@@ -45,13 +45,14 @@ function Navbar({ className }) {
               src={Flight}
               description="A React Flight Booking app that allows users to book flights by selecting their origin and destination."
             />
-          </div>
-        </MenuItem>
+          </div> */}
+        {/* </MenuItem> */}
 
         <MenuItem setActive={setActive} active={active} item="Contact">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink to="https://github.com/alexander784">Github</HoveredLink>
             <HoveredLink to="https://www.linkedin.com/in/alexander-nyaga-b415ab2a1/">LinkedIn</HoveredLink>
+            <HoveredLink to="">+ 254 796097131</HoveredLink>
           </div>
         </MenuItem>
         
