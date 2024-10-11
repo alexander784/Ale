@@ -29,7 +29,7 @@ const Experience = () => {
             </svg>
             </span>
             <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Zetech University</h3>
-            <time className='block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-100'>Software Engineering</time>
+            <time className='blo``ck mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-100'>Software Engineering</time>
             <ul className='list-disc pl-5 mb-4'>
             <li className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Developed a web-based system to automate the Student ID replacement process  streamlining the workflow for students and administrative staff.</li>
             <li className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Utilized a modern tech stack,PHP for development JavaScript for functionalities and mySQL for the database.</li>

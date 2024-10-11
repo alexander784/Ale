@@ -61,7 +61,7 @@ const items = [
   {
     title: "Black Stars",
     description: "This is a football website designed to provide fans and team members with an engaging platform to follow their favorite team. This site allows players to log in securely and upload their profiles and stats, ensuring they can showcase their information effectively.",
-    header: <Skeleton src={Footing} chips={["React,Firebase,Tailwind CSS"]} />,
+    header: <Skeleton src={Footing} chips={["React,Docker,Firebase,Tailwind CSS"]} />,
     icon: "",
     url: "https://footing-lyart.vercel.app/"
   },
