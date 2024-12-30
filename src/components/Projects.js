@@ -5,7 +5,7 @@ import Moringa from "../assets/Moringa.png";
 import Booking from "../assets/Booking.png";
 import Flight from "../assets/Flight.png";
 import Resume from "../assets/Resume.png";
-import Navbar from './NavBarLive';
+// import Navbar from './NavBarLive';
 import hiikers from '../assets/hiikers.png';
 import Footing from '../assets/Footing.png';
 
