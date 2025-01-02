@@ -1,6 +1,6 @@
 import React from 'react'
 import { CardBody, CardItem,CardContainer } from './ui/3DCard';
-import cvpic from "../assets/cvpic.png";
+// import cvpic from "../assets/cvpic.png";
 import { FaTwitter, FaLinkedin } from "react-icons/fa";
 
 
@@ -14,7 +14,7 @@ export function HomeCard() {
             >
                 {/* Hello, I am Alexander Nyaga */}
                 <img 
-                src={cvpic}
+                src=''
                 height="100"
                 width="100"
                 loading='lazy'
