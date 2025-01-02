@@ -6,6 +6,7 @@ import Footer from './Footer';
 import About from './About';
 import portfolio from "../assets/portfolio.jpg";
 import Aboutme from './Aboutme';
+import Blog from './Blog';
 
 export function Background() {
     return (
@@ -28,6 +29,8 @@ export function Background() {
                 <div className="md:w-[900px] p-10" id="myProjects">
                     <p className="text-4xl pb-4 font-bold">Projects</p>
                     <Projects />
+                    <p className="text-4xl pb-4 font-bold">My Blogs</p>
+                    <Blog />
                 </div>
                 <Footer />
             </div>

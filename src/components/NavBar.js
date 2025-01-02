@@ -15,10 +15,10 @@ function Navbar() {
       </div>
 
       <nav className="flex space-x-6">
-        <a href="#" className="text-white hover:text-black transition-colors">About</a>
-        <a href="#" className="text-white hover:text-black transition-colors">Blogs</a>
-        <a href="#" className="text-white hover:text-black transition-colors">Projects</a>
-        <a href="#" className="text-white hover:text-black transition-colors">Contact</a>
+        <a href="/" className="text-white hover:text-black transition-colors">About</a>
+        <a href="blog" className="text-white hover:text-black transition-colors">Blogs</a>
+        <a href="/projects" className="text-white hover:text-black transition-colors">Projects</a>
+        {/* <a href="#" className="text-white hover:text-black transition-colors">Contact</a> */}
 
 
       </nav>
