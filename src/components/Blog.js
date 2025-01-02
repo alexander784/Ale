@@ -31,7 +31,7 @@ const Blog = () => {
             {blogs.map((blog) => (
                 <div
                     key={blog.id}
-                    className="blog-card border rounded-md p-4 shadow-lg transition-transform duration-300 ease-in-out hover:scale-105"
+                    className="blog-card border rounded-md p-4 shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 bg-gray-800"
                 >
                     {blog.imageUrl && (
                         <img
@@ -40,8 +40,8 @@ const Blog = () => {
                             className="w-full h-auto mb-4 rounded"
                         />
                     )}
-                    <h2 className="text-lg font-bold mb-2">{blog.title}</h2>
-                    <p className="text-gray-600 mb-4">
+                    <h2 className="text-lg font-bold mb-2 text-white">{blog.title}</h2>
+                    <p className="text-white mb-4">
                         Learn how to {blog.title.toLowerCase()}!
                     </p>
                     <a

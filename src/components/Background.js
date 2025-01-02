@@ -27,9 +27,9 @@ export function Background() {
                     <Experience />
                 </div> */}
                 <div className="md:w-[900px] p-10" id="myProjects">
-                    <p className="text-4xl pb-4 font-bold">Projects</p>
+                    <p className="text-white text-4xl pb-4 font-bold">My Projects</p>
                     <Projects />
-                    <p className="text-4xl pb-4 font-bold">My Blogs</p>
+                    <p className="text-white text-4xl pb-4 font-bold">My Blogs</p>
                     <Blog />
                 </div>
                 <Footer />
