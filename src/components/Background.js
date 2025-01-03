@@ -16,17 +16,7 @@ export function Background() {
                 <About />
 
                 <Aboutme />
-
-            
-
-                {/* <div className='md:w-900px p-10'>
-                        <HomeCard />
-                    </div> */}
-                {/* <div className="md:w-[900px] p-10" id="experiences">
-                    <p className="text-4xl pb-4 font-bold">Experiences</p>
-                    <Experience />
-                </div> */}
-                <div className="md:w-[900px] p-10" id="myProjects">
+                <div className="md:w-[900px] p-10" id="Projects">
                     <p className="text-white text-4xl pb-4 font-bold">My Projects</p>
                     <Projects />
                     <p className="text-white text-4xl pb-4 font-bold">My Blogs</p>
