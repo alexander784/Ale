@@ -10,13 +10,13 @@ const Blog = () => {
             id: 1,
             title: 'Dockerizing a Django app with PostgreSQL',
             imageUrl: docker,
-            link: 'https://reactjs.org/docs/hooks-intro.html',
+            link: 'https://medium.com/p/fd6fd6c43d0c',
         },
         {
             id: 2,
             title: 'Working with Docker containers and deploying them on AWS',
             imageUrl: aws,
-            link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures',
+            link: 'https://medium.com/p/e1923b3f37cd',
         },
         {
             id: 3,

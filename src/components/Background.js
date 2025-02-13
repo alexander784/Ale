@@ -12,9 +12,7 @@ export function Background() {
     return (
         <div className='h-full w-full bg-zinc-800 dotted-box-effect relative flex flex-col overflow-auto'>
             <div className='h-full w-full flex flex-col items-center'>
-                
                 <About />
-
                 <Aboutme />
                 <div className="md:w-[900px] p-10" id="Projects">
                     <p className="text-white text-4xl pb-4 font-bold">My Projects</p>
