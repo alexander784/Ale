@@ -1,13 +1,12 @@
 import React from 'react';
 import { BentoGrid, BentoGridItem } from './ui/BentoGrid';
-import Jobs from "../assets/Jobs.png";
 import Moringa from "../assets/Moringa.png";
-import Booking from "../assets/Booking.png";
 import Flight from "../assets/Flight.png";
 import Resume from "../assets/Resume.png";
-// import Navbar from './NavBarLive';
 import hiikers from '../assets/hiikers.png';
 import Footing from '../assets/Footing.png';
+import django from '../assets/django.png';
+
 
 export function Projects() {
   return (
@@ -66,11 +65,11 @@ const items = [
     url: "https://footing-lyart.vercel.app/"
   },
   {
-    title: "Booking",
-    description: "This is a React Booking landing page that allows users to search for hotels and view details about available accommodations.",
-    header: <Skeleton src={Booking} chips={["React,Tailwind CSS"]} />,
+    title: "Django Authentication with Docker",
+    description: "A Django authentication system fully containerized using Docker. It provides user registration, login, logout, and authentication management using Django's built-in authentication system.",
+    header: <Skeleton src={django} chips={["Docker,Django python Postgresql"]} />,
     icon: "",
-    url: "https://booking-jdj6.vercel.app/"
+    url: "https://github.com/alexander784/django_auth-with-docker"
   },
   {
     title: "Flight Booking",

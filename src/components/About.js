@@ -23,10 +23,7 @@ const About = () => {
               I’m a software engineer specializing in Web applications and API
               development
             </motion.p>
-            {/* Button (Optional) */}
-            {/* <button className="mt-6 px-6 py-3 bg-blue-500 text-white font-medium rounded-md hover:bg-blue-600 transition"> */}
-            {/* Learn More */}
-            {/* </button> */}
+           
           </div>
           {/* Image Section */}
           <div className="mt-8 md:mt-0 md:w-1/2">

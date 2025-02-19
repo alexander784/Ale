@@ -1,10 +1,7 @@
 import React from 'react';
-import HomeCard from './HomeCard';
-import Experience from './Experience';
 import Projects from './Projects';
 import Footer from './Footer';
 import About from './About';
-import portfolio from "../assets/portfolio.jpg";
 import Aboutme from './Aboutme';
 import Blog from './Blog';
 
@@ -15,9 +12,9 @@ export function Background() {
                 <About />
                 <Aboutme />
                 <div className="md:w-[900px] p-10" id="Projects">
-                    <p className="text-white text-4xl pb-4 font-bold">My Projects</p>
+                    <p className="text-orange-400 text-4xl pb-4 font-bold text-center">My Projects</p>
                     <Projects />
-                    <p className="text-white text-4xl pb-4 font-bold">My Blogs</p>
+                    <p className="text-orange-400 text-4xl pb-4 font-bold text-center p-4">My Blogs</p>
                     <Blog />
                 </div>
                 <Footer />
