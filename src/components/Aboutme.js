@@ -7,12 +7,7 @@ const Aboutme = () => {
   return (
     <div className="w-[98%] mx-auto my-4 rounded-md bg-gradient-to-b from-zinc-600 to-zinc-800 flex flex-col items-center justify-center p-6">
       <p className="text-center rounded-md text-white mb-6">
-      I am a skilled full-stack developer with 3 years of experience, trained at Moringa.
-I specialize in building scalable and efficient online applications using ReactJS, Django, and PHP, with a strong focus on delivering exceptional user experiences and high-performance solutions.
-
-My expertise extends to containerization with Docker, cloud deployment using AWS, and implementing robust CI/CD pipelines to streamline development and ensure rapid, reliable delivery of software.
-
-I am passionate about leveraging modern technologies to solve complex challenges and create innovative solutions that make an impact.
+      I’m a dedicated machine learning and web development specialist who transforms client ideas into reality. I train custom models to meet your unique needs, build tailored websites with Python, Django, and Next.js for a sleek, responsive frontend, and deploy them efficiently using Docker and AWS. My expertise in integrating AI into projects ensures your solutions are smart, scalable, and cutting-edge. From concept to completion, I deliver high-quality, client-driven results that exceed expectations
       </p>
       <div className="flex items-center justify-center space-x-4">
         <a

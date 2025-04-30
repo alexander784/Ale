@@ -6,6 +6,8 @@ import Resume from "../assets/Resume.png";
 import hiikers from '../assets/hiikers.png';
 import Footing from '../assets/Footing.png';
 import django from '../assets/django.png';
+import django1 from '../assets/django1.png'
+import SoilAnalysis from '../assets/SoilAnalysi1.png';
 
 
 export function Projects() {
@@ -43,7 +45,7 @@ const Skeleton = ({ src, chips }) => (
 
 const items = [
   {
-    title: "Moringa Pair",
+    title: "Class Pair",
     description: "A system that randomly pairs up students, keeps track of each pair and changes weekly.",
     header: <Skeleton src={Moringa} chips={["React,Bootstrap,Flask,PostgreSQL"]} />,
     icon: "",
@@ -51,18 +53,18 @@ const items = [
     url: "https://moringa-pair-beta.vercel.app/"
   },
   {
-    title: "Hiikers",
-    description: "This web application allows tourists to discover various hiking and biking trails, book their adventures, and explore the great outdoors with ease.",
-    header: <Skeleton src={hiikers} chips={["React,Tailwind CSS"]} />,
+    title: "Dockerize Event management",
+    description: "THis is a RESTfulAPI for an event management system built with Django and Django REST Framework (DRF), containerized using Docker. This API provides endpoints to manage events and categories, designed for integration with any frontend framework",
+    header: <Skeleton src={django1} chips={["Docker","Restful","Python",'django']} />,
     icon: "",
-    url: "https://hikeer.vercel.app/"
+    url: "https://github.com/alexander784/Events"
   },
   {
-    title: "Black Stars",
-    description: "This is a football website designed to provide fans and team members with an engaging platform to follow their favorite team. This site allows players to log in securely and upload their profiles and stats, ensuring they can showcase their information effectively.",
-    header: <Skeleton src={Footing} chips={["React,Docker,Firebase,Tailwind CSS"]} />,
+    title: "Predictive Soil Analysis with Reinforcement Agent",
+    description: "This is a Django-based web application for analyzing soil data, predicting soil quality, and providing AI-driven crop suggestions. It features a user-friendly interface with a file upload system, interactive visualizations, and a chatbot powered by a reinforcement learning (RL) agent.",
+    header: <Skeleton src={SoilAnalysis} chips={["Python, pandas, django, sci-kit learn"]} />,
     icon: "",
-    url: "https://footing-lyart.vercel.app/"
+    url: "https://github.com/alexander784/Soil_Analysis"
   },
   {
     title: "Django Authentication with Docker",

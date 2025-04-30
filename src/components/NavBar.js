@@ -11,7 +11,7 @@ function Navbar() {
         {/* <Link to="projects" smooth duration={500} offset={-70} className="cursor-pointer text-white hover:text-black transition-colors">
           Projects
         </Link> */}
-        <Link to="blogs" smooth duration={500} offset={-70} className="cursor-pointer text-white hover:text-black transition-colors">
+        <Link to="blogs" smooth duration={500} offset={-70} className="cursor-pointer text-white hover:text-orange-400 transition-colors">
           Contact
         </Link>
       </nav>
