@@ -1,7 +1,7 @@
 import React from 'react';
 import { BentoGrid, BentoGridItem } from './ui/BentoGrid';
 import Moringa from "../assets/Moringa.png";
-import Flight from "../assets/Flight.png";
+import what from "../assets/what.png";
 import Resume from "../assets/Resume.png";
 import hiikers from '../assets/hiikers.png';
 import Footing from '../assets/Footing.png';
@@ -44,6 +44,20 @@ const Skeleton = ({ src, chips }) => (
 );
 
 const items = [
+    {
+    title: "Whatsapp AI chatbot",
+    description: "A sleek, user-friendly WhatsApp chatbot built with Django to streamline booking management.",
+    header: <Skeleton src={what} chips={["Python django,webhooks,Twilio API"]} />,
+    icon: "",
+    url: "https://github.com/alexander784/Whatsapp_bot"
+  },
+   {
+    title: "Predictive Soil Analysis with Reinforcement Agent",
+    description: "This is a Django-based web application for analyzing soil data, predicting soil quality, and providing AI-driven crop suggestions. It features a user-friendly interface with a file upload system, interactive visualizations, and a chatbot powered by a reinforcement learning (RL) agent.",
+    header: <Skeleton src={SoilAnalysis} chips={["Python, pandas, django, sci-kit learn"]} />,
+    icon: "",
+    url: "https://github.com/alexander784/Soil_Analysis"
+  },
   {
     title: "Class Pair",
     description: "A system that randomly pairs up students, keeps track of each pair and changes weekly.",
@@ -59,13 +73,7 @@ const items = [
     icon: "",
     url: "https://github.com/alexander784/Events"
   },
-  {
-    title: "Predictive Soil Analysis with Reinforcement Agent",
-    description: "This is a Django-based web application for analyzing soil data, predicting soil quality, and providing AI-driven crop suggestions. It features a user-friendly interface with a file upload system, interactive visualizations, and a chatbot powered by a reinforcement learning (RL) agent.",
-    header: <Skeleton src={SoilAnalysis} chips={["Python, pandas, django, sci-kit learn"]} />,
-    icon: "",
-    url: "https://github.com/alexander784/Soil_Analysis"
-  },
+ 
   {
     title: "Django Authentication with Docker",
     description: "A Django authentication system fully containerized using Docker. It provides user registration, login, logout, and authentication management using Django's built-in authentication system.",
@@ -73,13 +81,7 @@ const items = [
     icon: "",
     url: "https://github.com/alexander784/django_auth-with-docker"
   },
-  {
-    title: "Flight Booking",
-    description: "This is a React Flight Booking app that allows users to book flights by selecting their origin and destinations.",
-    header: <Skeleton src={Flight} chips={["React,Tailwind CSS,Redux"]} />,
-    icon: "",
-    url: "https://flight-henna.vercel.app/"
-  },
+
   {
     title: "Resume Builder",
     description: "A web app for creating resumes. Built with React for the frontend and Flask backend, this app allows users to edit, preview their resume, and download the resume.",
